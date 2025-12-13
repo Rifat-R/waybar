@@ -1,0 +1,90 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: #1a1a1a; /* Very dark grey background */
+    color: #ffdcb6; /* Soft peach text */
+}
+
+/* --- WORKSPACES --- */
+#workspaces {
+    background-color: #2d2d2d;
+    margin: 5px;
+    padding: 5px 5px;
+    border-radius: 15px;
+}
+
+#workspaces button {
+    padding: 0 10px;
+    background-color: transparent;
+    color: #ff9a00; /* Orange text */
+}
+
+#workspaces button:hover {
+    background: rgba(255, 69, 0, 0.2); /* Red-Orange hover */
+    border-radius: 10px;
+}
+
+#workspaces button.active {
+    color: #ff4500; /* Deep Sunset Orange */
+    background: rgba(255, 154, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* --- MODULES COMMON --- */
+#clock,
+#battery,
+#network,
+#pulseaudio,
+#custom-power {
+    padding: 0 15px;
+    color: #1a1a1a; /* Dark text for contrast on colored pills */
+    border-radius: 15px;
+    margin: 5px 2px;
+    font-weight: bold;
+}
+
+/* --- CLOCK (Gold/Yellow) --- */
+#clock {
+    background-color: #ffb703; 
+    color: #000000;
+}
+
+/* --- AUDIO (Sunset Orange) --- */
+#pulseaudio {
+    background-color: #fb8500; 
+}
+#pulseaudio.muted {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+/* --- NETWORK (Deep Orange) --- */
+#network {
+    background-color: #fd6805;
+}
+#network.disconnected {
+    background-color: #d00000;
+}
+
+/* --- BATTERY (Red-Orange) --- */
+#battery {
+    background-color: #ff4500;
+    color: #ffffff;
+}
+#battery.charging {
+    background-color: #ffb703;
+    color: #000000;
+}
+
+/* --- POWER BUTTON --- */
+#custom-power {
+    background-color: #d00000; /* Deep Red */
+    color: #ffffff;
+    margin-right: 10px;
+}
