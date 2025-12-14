@@ -9,28 +9,11 @@
     "modules-right": ["pulseaudio", "network", "battery", "custom/power"],
 
     // --- WORKSPACES ---
-    "hyprland/workspaces": {
-        "disable-scroll": true,
-        "all-outputs": true,
-        "on-click": "activate",
-        "format": "{icon}",
-        "persistent-workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": []
-        },
-        "format-icons": {
-            "1": "1",
-            "2": "2",
-            "3": "3",
-            "4": "4",
-            "5": "5",
-            "urgent": "",
-            "active": "",
-            "default": ""
-        }
-    },
+	"hyprland/workspaces": {
+	     "format": "{icon}",
+	     "on-scroll-up": "hyprctl dispatch workspace e+1",
+	     "on-scroll-down": "hyprctl dispatch workspace e-1"
+	},
 
     // --- CLOCK ---
     "clock": {
