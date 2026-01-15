@@ -45,7 +45,8 @@
         "format-wifi": "  {essid}",
         "format-ethernet": "  Connected",
         "format-disconnected": "⚠  Disconnected",
-        "tooltip-format": "{ifname} via {gwaddr}"
+        "tooltip-format": "{ifname} via {gwaddr}",
+	"on-click": "alacritty --class floating_nmtui -e nmtui-connect"
     },
 
     // --- BATTERY ---
