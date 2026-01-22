@@ -88,3 +88,16 @@ window#waybar {
     color: #ffffff;
     margin-right: 10px;
 }
+
+#bluetooth {
+    padding: 0 10px;
+    color: #89b4fa; /* Example: a nice light blue */
+}
+
+#bluetooth.connected {
+    color: #a6e3a1; /* Green when connected */
+}
+
+#bluetooth.disabled {
+    color: #f38ba8; /* Red when off */
+}
