@@ -57,7 +57,8 @@
         "format-ethernet": "  Connected",
         "format-disconnected": "⚠  Disconnected",
         "tooltip-format": "{ifname} via {gwaddr}",
-	"on-click": "alacritty --class floating_nmtui -e nmtui-connect"
+	"on-click": "alacritty --class floating_nmtui -e sh -c 'nmcli dev wifi rescan && sleep 1 && nmtui-connect'"
+
     },
 
     // --- BATTERY ---
