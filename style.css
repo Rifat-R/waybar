@@ -78,7 +78,7 @@ window#waybar {
     color: #ffffff;
 }
 #battery.charging {
-    background-color: #ffb703;
+    background-color: #33cc33;
     color: #000000;
 }
 
